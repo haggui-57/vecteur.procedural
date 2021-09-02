@@ -1,0 +1,19 @@
+program lecture_affichage_vecteur 
+uses wincrt;
+
+{ declaration }
+var 
+    T : Array [1..100]  of real 
+    N : i : integer;
+
+{ le corps du programme : instructions}
+write('Introduction le nombre de compostante du T : ');
+real(N);
+writeln('introduire les valeurs des compostantes du T |(',N,' valeurs) : ');
+for i:=1 to N do 
+    real(T[i]);
+
+{ l'Affichage du T }
+writeln('les valeurs du vecteur T : ' );
+for i:=1 to N do 
+    write(T[i] :0:2 '    ');
